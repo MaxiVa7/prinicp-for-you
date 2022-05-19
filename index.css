@@ -1,0 +1,58 @@
+body {
+    background-color: #036D60;
+  }
+.oneblock{
+    width: 500px;
+    height: 130px;
+    border-top: 5px double green;
+    border-bottom: 5px double green;
+    margin: 15px 30px;
+    padding: 15px;
+    background-color: #F9F9DC;
+    color: orange;
+    overflow: auto;
+}
+.twoblock{
+    width: 500px;
+    height: 130px;
+    border-top: 5px double green;
+    border-bottom: 5px double green;
+    margin: 30px;
+    padding: 20px;
+    background-color: #F9F9DC;
+    color: orange;
+    overflow: auto;
+    -ms-overflow-style: none; /*данный скрипт убирает видимость скролбар у блока.*/
+    scrollbar-width: none; /*данный скрипт убирает видимость скролбар у блока.*/
+}
+.twoblock::-webkit-scrollbar { /*данный скрипт убирает видимость скролбар у блока.*/
+    width: 0;
+    height: 0;
+}
+
+.threeblock{
+    width: 500px;
+    height: 130px;
+    border-top: 5px double green;
+    border-bottom: 5px double green;
+    margin: 30px;
+    padding: 20px;
+    background-color: #F9F9DC;
+    color: orange;
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
+body{ /*флексами выставляем позиционирование блоков*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+p {
+    text-align: justify;
+    text-indent: 20px;
+    margin-top: 0;
+	margin-bottom: 0;
+  }
+
